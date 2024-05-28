@@ -16,6 +16,7 @@ function App() {
     if(task.trim() !== ""){
       setList([...list,task])
       setTask("");
+      
     }
     else{
       alert("Task cannot be empty");
@@ -38,7 +39,7 @@ function App() {
           <button onClick={add} >Add</button>
         </div>
         <hr />
-        <div className="listContainer">
+        <div style={{border:"1px solid white"}} className="listContainer">
           <ul>
             {list.map((task,index) => <li key={index}>{task}
             <img onClick={ () =>  remove(index)} src={deleteImage} /></li>)}
@@ -51,3 +52,4 @@ function App() {
 }
 
 export default App;
+    

@@ -32,6 +32,9 @@ h1{
   color: black;
   font-weight: 900;
 }
+/* .listContainer{
+  border: 1px solid white;
+} */
 ul{
   display: flex;
   justify-content: space-between;
@@ -64,4 +67,16 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+@media (max-width: 768px) {
+  .box{
+    width:300px;
+  }
+  input{
+    width: 60%;
+  }
+  ul{
+    width: 60%;
+    overflow-x:scroll ;
+  }
 
+}
